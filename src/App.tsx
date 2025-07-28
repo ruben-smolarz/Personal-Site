@@ -163,11 +163,12 @@ function App() {
       image: "images/projects/Shufersal-Store.png",
     },
     {
-      title: "Login System",
+      title: "Weather app",
       description:
         "A sleek weather web application with a glassmorphism and dark theme design, built using React, TypeScript, Tailwind CSS, and Vite.",
       tech: ["Node.js", "TypeScript", "React", "Tailwind CSS", "Vite"],
-      github: "https://github.com/alexis-82/login-system",
+      github:
+        "https://github.com/ruben-smolarz/Weather-App-Forecast-Dashboard-",
       image: "images/projects/agro-clima.png",
     },
   ];
