@@ -1,0 +1,16 @@
+# Configurazione robots.txt per sito personale
+User-agent: *
+Allow: /
+
+# Impedisci l'accesso a qualsiasi cartella admin o API private
+Disallow: /admin/
+Disallow: /api/private/
+Disallow: /login/
+Disallow: /register/
+
+# Impedisci l'indicizzazione di qualsiasi file o cartelle temporanee
+Disallow: /temp/
+Disallow: /*.tmp$
+
+# Indica la posizione della sitemap
+Sitemap: https://www.alexis82.it/sitemap.xml 

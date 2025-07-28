@@ -1,0 +1,103 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Sigue desplazándote suavemente sin que se atasque */
+html {
+  scroll-behavior: smooth;
+  /* tipo de ajuste de desplazamiento: y obligatorio; eliminar efecto snap */
+}
+
+/*Eliminar los ganchos de sección durante el desplazamiento*/
+/* #inicio, #sobre, #proyectos, #contacto,
+sección[id], div[id]:no(#root) {
+desplazamiento-ajuste-alineación: inicio;
+scroll-snap-stop: siempre;
+} */
+
+/* Oculta la barra de desplazamiento pero conserva la funcionalidad de desplazamiento */
+.hide-scrollbar {
+  /* Para Firefox */
+  scrollbar-width: none;
+  /* Para IE y Edge */
+  -ms-overflow-style: none;
+}
+
+/* Para Chrome, Safari y Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.4s ease-out forwards;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(to right, #4F46E5, #7C3AED);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  border: none;
+  font-weight: 500;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+}
+
+.back-to-top:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(to right, #6366F1, #8B5CF6);
+}
+
+body {
+  @apply bg-gray-950;
+}

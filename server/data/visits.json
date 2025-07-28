@@ -1,0 +1,33 @@
+{
+  "totalVisits": 1,
+  "uniqueVisitors": 1,
+  "paths": {
+    "/api/visits/": 1
+  },
+  "sessions": {
+    "::1": {
+      "count": 1,
+      "lastVisit": "2025-03-12T10:26:05.892Z",
+      "paths": [
+        "/api/visits/"
+      ],
+      "country": "Unknown"
+    }
+  },
+  "hourlyStats": {
+    "11": 1
+  },
+  "dailyStats": {
+    "2025-03-12": 1
+  },
+  "browserStats": {
+    "Unknown": 1
+  },
+  "osStats": {
+    "Unknown": 1
+  },
+  "countryStats": {
+    "Unknown": 1
+  },
+  "lastUpdated": "2025-03-12T10:26:05.892Z"
+}

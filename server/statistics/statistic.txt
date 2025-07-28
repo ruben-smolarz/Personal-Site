@@ -1,0 +1,6 @@
+Statistiche complete: http://localhost:5000/api/visits
+Statistiche di base: http://localhost:5000/api/visits/basic
+Statistiche per pagina: http://localhost:5000/api/visits/pages
+Statistiche temporali: http://localhost:5000/api/visits/time
+Statistiche tecniche: http://localhost:5000/api/visits/tech
+Statistiche geografiche: http://localhost:5000/api/visits/geo
