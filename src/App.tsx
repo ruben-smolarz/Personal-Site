@@ -116,7 +116,7 @@ function App() {
       title: "CoffeShop",
       description: "File Browser multilingua per la gestione dei file da web",
       tech: ["Html", "CSS", "Javascript"],
-      github: "beatifulcoffe.netlify.app/",
+      github: "https://beatifulcoffe.netlify.app/",
       image: "images/projects/CoffeShop.png",
     },
     {
