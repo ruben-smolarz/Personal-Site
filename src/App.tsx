@@ -114,7 +114,7 @@ function App() {
   const featuredProjects = [
     {
       title: "CoffeShop",
-      description: "File Browser multilingua per la gestione dei file da web",
+      description: "Deploying the CoffeShop project to html css javascript",
       tech: ["Html", "CSS", "Javascript"],
       github: "https://beatifulcoffe.netlify.app/",
       image: "images/projects/CoffeShop.png",
